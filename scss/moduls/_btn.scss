@@ -1,0 +1,15 @@
+.btn {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  color: #fff;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 120%; /* 21.6px */
+  padding: 20px 10px;
+  border-radius: 5px;
+  background-image: linear-gradient(274deg, #be8d34 -14.04%, #fee3b2 215.29%);
+  border: 0;
+  cursor: pointer;
+}
