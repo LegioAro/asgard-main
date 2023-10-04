@@ -2,14 +2,17 @@
   padding: 50px 0;
   &__wrapper {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
   }
 
   &__content {
-    margin-right: 20px;
+    margin-right: 65px;
     display: flex;
     align-items: center;
+  }
+
+  &__content-wrapper {
+    display: flex;
+    align-items: flex-start;
   }
 
   &__logo {
@@ -21,8 +24,13 @@
 
   &__content-item {
     margin-right: 65px;
+    max-width: 270px;
     &:last-child {
       margin-right: 0;
+    }
+
+    &--full {
+      max-width: 590px;
     }
   }
 
@@ -55,6 +63,10 @@
       }
     }
 
+    &--underline {
+      text-decoration: underline;
+    }
+
     span {
       margin-right: 10px;
     }
@@ -63,22 +75,12 @@
     }
   }
 
-  &__info {
-    display: flex;
-    flex-direction: column;
+  &__content-item-text {
+    font-size: 14px;
   }
 
-  &__info-link {
-    font-size: 14px;
-    text-decoration-line: underline;
-    margin-bottom: 10px;
-    transition: 0.3s;
-    &:last-child {
-      margin-bottom: 0;
-    }
-    &:hover {
-      color: rgba(190, 141, 52, 1);
-    }
+  &__content-info {
+    display: flex;
   }
 
   .icon-mail {
@@ -96,7 +98,7 @@
   }
 }
 
-@media (max-width: 850px) {
+@media (max-width: 1850px) {
   .footer {
     &__wrapper {
       flex-direction: column;
@@ -104,26 +106,61 @@
     &__content {
       margin-right: 0;
       margin-bottom: 50px;
+      max-width: 100%;
+      justify-content: center;
+    }
+
+    &__content-info {
+      justify-content: center;
     }
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 950px) {
   .footer {
+    &__content-info {
+      flex-direction: column;
+      align-items: center;
+
+      .footer__content-item {
+        margin-right: 0;
+        margin-bottom: 50px;
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
     &__content {
       flex-direction: column;
-      align-items: flex-start;
-      margin-bottom: 30px;
     }
     &__logo {
       margin-right: 0;
-      margin: 0 auto 30px;
+      margin-bottom: 50px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .footer {
+    &__content-wrapper {
+      flex-direction: column;
+    }
+    &__content {
+      margin-bottom: 30px;
     }
     &__content-item {
       margin-right: 0;
-      margin-bottom: 20px;
+      margin-bottom: 30px;
       &:last-child {
         margin-bottom: 0;
+      }
+    }
+    &__logo {
+      margin-bottom: 30px;
+    }
+    &__content-info {
+      .footer__content-item {
+        margin-bottom: 30px;
       }
     }
   }

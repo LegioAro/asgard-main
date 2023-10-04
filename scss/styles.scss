@@ -6,6 +6,12 @@
 
 //Moduls
 @import './moduls/btn';
+@import './moduls/title-section';
+@import './moduls/modal';
+@import './moduls/review';
+@import './moduls/categorys';
+@import './moduls/burger';
+
 //Blocks
 
 //Sections
@@ -13,5 +19,9 @@
 @import './sections/cover';
 @import './sections/projects';
 @import './sections/gallery';
+@import './sections/layouts';
+@import './sections/about';
 @import './sections/news';
+@import './sections/map';
+@import './sections/documents';
 @import './sections/footer';

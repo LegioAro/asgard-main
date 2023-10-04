@@ -1,6 +1,8 @@
 .news {
-  margin-bottom: 50px;
-  padding-top: 155px;
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+  margin-bottom: 70px;
 
   &__wrapper {
   }
@@ -77,6 +79,11 @@
     margin-bottom: 30px;
   }
 
+  &__item-category {
+    max-width: fit-content;
+    margin-bottom: 100px;
+  }
+
   &__item-text {
     color: #201c1c;
     font-size: 24px;
@@ -150,8 +157,6 @@
 
 @media (max-width: 768px) {
   .news {
-    padding-top: 100px;
-
     &__items {
       grid-template-columns: repeat(1, 1fr);
       max-width: 500px;
@@ -171,6 +176,9 @@
     }
     &__item-text {
       font-size: 16px;
+    }
+    &__item-category {
+      margin-bottom: 50px;
     }
   }
 }

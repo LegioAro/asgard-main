@@ -15,3 +15,24 @@ body {
   margin: 0 auto;
   padding: 0 20px;
 }
+
+.--gradient {
+  background: var(--1, linear-gradient(274deg, #be8d34 -14.04%, #fee3b2 215.29%));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.--m-non {
+  margin-bottom: 0 !important;
+}
+
+.no-cover {
+  padding-top: 155px;
+}
+
+@media (max-width: 768px) {
+  .no-cover {
+    padding-top: 100px;
+  }
+}
