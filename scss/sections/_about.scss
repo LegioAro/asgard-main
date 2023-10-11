@@ -7,6 +7,7 @@
   }
 
   &__items {
+    margin-bottom: 98px;
   }
 
   &__item {
@@ -76,6 +77,22 @@
       background-size: cover;
     }
   }
+
+  &__item-text {
+    font-size: 24px;
+    line-height: 130%;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-bottom: 30px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &__btn {
+    max-width: 270px;
+    margin: 0 auto;
+  }
 }
 
 @media (max-width: 1300px) {
@@ -104,6 +121,9 @@
     &__item-title {
       margin-bottom: 30px;
     }
+    &__item-text {
+      font-size: 20px;
+    }
   }
 }
 
@@ -122,6 +142,9 @@
 @media (max-width: 768px) {
   .about {
     margin-bottom: 70px;
+    &__items {
+      margin-bottom: 50px;
+    }
     &__item-img {
       height: 200px;
       margin-bottom: 20px;
@@ -133,6 +156,9 @@
         width: 20px;
         height: 20px;
       }
+    }
+    &__item-text {
+      font-size: 16px;
     }
   }
 }
