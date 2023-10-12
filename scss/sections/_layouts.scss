@@ -40,6 +40,10 @@
     letter-spacing: -0.04em;
     color: #505050;
     margin-bottom: 20px;
+
+    &--uppercase {
+      text-transform: uppercase;
+    }
   }
 
   &__item-elems {
