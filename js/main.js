@@ -44,12 +44,24 @@ window.addEventListener('resize', () => {
 
 //cover video addaptive
 
-const coverVideo = document.querySelector('.cover__video');
-if (coverVideo) {
-  if (document.documentElement.clientWidth <= 768) {
-    coverVideo.src = 'video/mob.mp4';
+// const coverVideo = document.querySelector('.cover__video');
+// if (coverVideo) {
+//   if (document.documentElement.clientWidth <= 768) {
+//     coverVideo.src = 'video/mob.mp4';
+//   } else {
+//     coverVideo.src = 'video/video.mp4';
+//   }
+// }
+const coverVideoDesc = document.querySelector('.cover__video-desc');
+const coverVideoMob = document.querySelector('.cover__video-mob');
+
+if (coverVideoDesc && coverVideoMob) {
+  if (document.documentElement.clientWidth <= 550) {
+    coverVideoDesc.classList.remove('visible');
+    coverVideoMob.classList.add('visible');
   } else {
-    coverVideo.src = 'video/video.mp4';
+    coverVideoDesc.classList.add('visible');
+    coverVideoMob.classList.remove('visible');
   }
 }
 
