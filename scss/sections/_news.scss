@@ -23,6 +23,10 @@
         max-width: 890px;
       }
     }
+
+    &.hide {
+      display: none;
+    }
   }
 
   &__item-text-img {
@@ -108,6 +112,7 @@
 
   &__item-btn {
     max-width: 270px;
+    margin: auto 0 0;
   }
 
   &__item-text-video {

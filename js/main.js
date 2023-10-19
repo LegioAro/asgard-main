@@ -164,3 +164,33 @@ if (reviewBtns && review) {
     };
   };
 }
+
+//categorys
+
+const categorys = document.querySelectorAll('.categorys');
+
+if (categorys.length > 0) {
+  categorys.forEach((categoryBlock) => {
+    const categorysNames = categoryBlock.querySelectorAll('*[data-category]');
+    const categorysContents = document.querySelectorAll('*[data-category-content]');
+
+    categorysNames.forEach((categorysName) => {
+      categorysName.addEventListener('click', () => {
+        const categorysNameAttr = categorysName.getAttribute('data-category');
+        const categorysNameContents = document.querySelectorAll(
+          `*[data-category-content=${categorysNameAttr}]`,
+        );
+
+        categorysNames.forEach((item) => item.classList.remove('active'));
+        categorysName.classList.add('active');
+
+        if (categorysNameAttr === 'all') {
+          categorysContents.forEach((item) => item.classList.remove('hide'));
+        } else {
+          categorysContents.forEach((item) => item.classList.add('hide'));
+          categorysNameContents.forEach((item) => item.classList.remove('hide'));
+        }
+      });
+    });
+  });
+}

@@ -27,7 +27,7 @@
     background-color: #d5d5d5;
     box-sizing: border-box;
 
-    &--active {
+    &.active {
       border: 4px solid #be8d34;
       padding: 29px 25px;
     }
@@ -39,7 +39,7 @@
     &__item {
       padding: 24px;
       font-size: 20px;
-      &--active {
+      &.active {
         padding: 21px;
       }
     }
@@ -51,7 +51,7 @@
     &__item {
       padding: 20px;
       font-size: 16px;
-      &--active {
+      &.active {
         padding: 17px;
       }
     }
@@ -70,7 +70,7 @@
     &__item {
       padding: 15px;
       font-size: 16px;
-      &--active {
+      &.active {
         padding: 12px;
       }
     }
