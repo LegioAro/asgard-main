@@ -17,7 +17,7 @@ body {
 }
 
 .--gradient {
-  background: var(--1, linear-gradient(274deg, #be8d34 -14.04%, #fee3b2 215.29%));
+  background-image: linear-gradient(274deg, #be8d34 -14.04%, #fee3b2 215.29%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
