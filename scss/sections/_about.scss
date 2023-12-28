@@ -66,15 +66,17 @@
     &::before {
       content: '';
       position: absolute;
+      display: flex;
       width: 34px;
       height: 34px;
       left: 0;
-      top: 50%;
-      transform: translateY(-50%);
+      top: 0;
+      // top: 50%;
+      // transform: translateY(-50%);
 
       background-image: url(../img/icon/check.svg);
       background-repeat: no-repeat;
-      background-size: cover;
+      background-size: contain;
     }
   }
 

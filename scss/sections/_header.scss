@@ -92,11 +92,11 @@
     cursor: pointer;
 
     &:hover {
-      p {
+      & > p {
         color: rgba(190, 141, 52, 1);
       }
 
-      .header__link-sublink-block {
+      & > .header__link-sublink-block {
         opacity: 1;
         pointer-events: all;
       }
@@ -123,8 +123,29 @@
       }
     }
 
-    &--active {
+    &.header__link-sublink {
+      width: 100%;
+      .header__link-sublink-block {
+        width: 218px;
+        top: -14px;
+        left: calc(100% + 24px);
+        transform: translateX(0);
+
+        &::before {
+          content: '';
+          width: 24px;
+          height: 100%;
+          top: 0px;
+          left: -24px;
+        }
+      }
       p {
+        font-weight: 400;
+      }
+    }
+
+    &--active {
+      & > p {
         color: rgba(190, 141, 52, 1);
       }
     }
@@ -142,6 +163,7 @@
     backdrop-filter: blur(17.5px);
     transition: 0.3s;
     padding: 14px;
+    color: #ffffff;
 
     &::before {
       content: '';
@@ -154,6 +176,7 @@
   }
 
   &__link-sublink {
+    display: flex;
     font-size: 14px;
     line-height: 120%; /* 16.8px */
     letter-spacing: -0.42px;
@@ -214,7 +237,7 @@
       &:last-child {
         margin-bottom: 0;
       }
-      p {
+      & > p {
         font-size: 24px;
         font-weight: 600;
         letter-spacing: -0.72px;
@@ -226,9 +249,47 @@
         .header__link-sublink-block {
           display: flex;
         }
-        p {
+        & > p {
           img {
             transform: rotate(-90deg);
+          }
+        }
+
+        &.header__link-sublink {
+          & > .header__link-sublink-block {
+            display: flex;
+            width: fit-content;
+          }
+          & > p {
+            img {
+              transform: rotate(-90deg);
+            }
+          }
+        }
+      }
+
+      &.header__link-sublink {
+        margin-bottom: 12px;
+        width: fit-content;
+
+        & > p {
+          font-size: 16px;
+        }
+
+        & > .header__link-sublink-block {
+          position: relative;
+          padding: 0 0 0 14px;
+          background-color: rgba(0, 0, 0, 0);
+          flex-direction: column;
+          transform: translateX(0);
+          display: none;
+          margin-top: 16px;
+
+          left: 0;
+          top: 0;
+
+          &::before {
+            display: none;
           }
         }
       }
@@ -244,6 +305,7 @@
       margin-top: 16px;
     }
     &__link-sublink {
+      flex-direction: column;
       margin-bottom: 12px;
       font-size: 16px;
     }
