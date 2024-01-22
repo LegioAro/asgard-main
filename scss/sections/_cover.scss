@@ -70,7 +70,13 @@
     &:last-child {
       margin-bottom: 0;
     }
-    p {
+    ul {
+      text-align: left;
+      list-style-type: disc;
+      list-style-position: inside;
+    }
+    p,
+    li {
       font-size: 24px;
       line-height: 130%; /* 31.2px */
       max-width: 720px;
