@@ -76,7 +76,8 @@
       list-style-position: inside;
     }
     p,
-    li {
+    li,
+    .cover__desc--p {
       font-size: 24px;
       line-height: 130%; /* 31.2px */
       max-width: 720px;
@@ -174,7 +175,9 @@
     }
     &__desc {
       padding: 20px;
-      p {
+      p,
+      li,
+      .cover__desc--p {
         font-size: 18px;
       }
     }
