@@ -15,6 +15,8 @@
     justify-content: center;
     .review__img {
       transform-origin: left top;
+      display: flex;
+      height: auto;
       transform: scale(3);
     }
   }
