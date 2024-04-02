@@ -1,0 +1,133 @@
+.header {
+  padding: 70px 0 100px;
+
+  background-image: url(../img/header/bg.jpg);
+  background-position: top center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__title {
+    font-family: var(--font-text-2);
+    font-size: 58px;
+    font-weight: 700;
+    line-height: 120%;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+
+    span {
+      color: #be8d34;
+    }
+  }
+
+  &__info {
+    padding: 28px 46px;
+    border: 1px solid rgb(190, 141, 52);
+    border-radius: 6.41px;
+    margin-bottom: 40px;
+
+    display: flex;
+    align-items: center;
+
+    p {
+      font-size: 18px;
+      line-height: 130%;
+      letter-spacing: 0%;
+      text-align: left;
+      max-width: 186px;
+    }
+  }
+
+  &__info-icon {
+    width: 100%;
+    max-width: 32px;
+    display: flex;
+    margin-right: 18px;
+  }
+
+  &__video {
+    width: 100%;
+    max-width: 780px;
+    overflow: hidden;
+    border-radius: 10px;
+  }
+
+  &__preview {
+    width: 100%;
+    height: 100%;
+    position: relative;
+  }
+
+  &__preview-img {
+    display: flex;
+    width: 100%;
+  }
+
+  &__preview-info {
+    position: absolute;
+    z-index: 1;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    border-radius: 10px;
+    backdrop-filter: blur(15px);
+    background: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    max-width: 300px;
+    padding: 31px 55px;
+
+    font-family: var(--font-text-2);
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 120%;
+    text-align: center;
+    text-transform: uppercase;
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    &__title {
+      font-size: 40px;
+    }
+    &__preview-info {
+      font-size: 20px;
+    }
+  }
+}
+
+@media (max-width: 550px) {
+  .header {
+    &__title {
+      font-size: 30px;
+    }
+    &__info {
+      padding: 15px 20px;
+    }
+    &__preview-info {
+      font-size: 18px;
+    }
+  }
+}
+
+@media (max-width: 425px) {
+  .header {
+    &__title {
+      font-size: 30px;
+    }
+    &__info {
+      padding: 15px 20px;
+    }
+    &__preview-info {
+      max-width: 260px;
+      font-size: 16px;
+      padding: 15px;
+    }
+  }
+}

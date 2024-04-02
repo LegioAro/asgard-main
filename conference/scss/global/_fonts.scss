@@ -1,0 +1,12 @@
+//font-family: 'Noto Sans', sans-serif;
+
+@font-face {
+  font-family: 'CopperPlate';
+  src: url('../fonts/copperplate_bold.eot'); /* IE 9 Compatibility Mode */
+  src: url('../fonts/copperplate_bold.eot?#iefix') format('embedded-opentype'),
+    /* IE < 9 */ url('../fonts/copperplate_bold.woff2') format('woff2'),
+    /* Super Modern Browsers */ url('../fonts/copperplate_bold.woff') format('woff'),
+    /* Firefox >= 3.6, any other modern browser */ url('../fonts/copperplate_bold.ttf')
+      format('truetype'),
+    /* Safari, Android, iOS */ url('../fonts/copperplate_bold.svg#copperplate_bold') format('svg'); /* Chrome < 4, Legacy iOS */
+}
